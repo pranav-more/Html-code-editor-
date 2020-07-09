@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <title>HTML code editor</title>
+</head>
+
+<body>
+  
+  <div class="container">
+    <div class="text-center mt-4" style="margin-top: 200px;">
+      <h1 style="color: rgb(233, 137, 27); display: inline; font-family: 'Acme', sans-serif;">HTML</h1><span style="font-family: 'Acme', sans-serif; font-size: 25px; color: rgb(218, 184, 146);"> Code editor</span> 
+    </div>
+
+
+    <div class="row mt-4 p-4">
+      <div class="col-4 p-4">
+        <p>Write code here</p>
+        <div class="box">
+          <div class="content">
+            
+            <textarea name="" id="code" style="background-color: #060c21; color: white;" rows="20"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="col-2 m-4">
+        <div class="container-btn">
+          <button id="run" style="margin-top: 250px; margin-left: 65px;">RUN</button>
+        </div>
+
+      </div>
+
+      <div class="col-4 p-4">
+        <p>Output</p>
+        <div class="box">
+          <div class="content" id="output">
+            <!-- <textarea name="" id="output" style="background-color: #060c21; color: white;" rows="20"></textarea> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      $('#run').click(function () {
+        let HTMLcode = $('#code').val();
+        $('#output').html(HTMLcode);
+      });
+    });
+
+  </script>
+</body>
+
+</html>
